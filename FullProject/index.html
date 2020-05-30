@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header> <h1> Pick a number! </h1> </header> 
+    
+
+    <!-- show the score for you vs me -->
+    <!-- make a box to write the scores inside -->
+    <div class="score-box">
+        <!-- div changes line  -->
+        <div id="YouLabel"  class="badge">You</div>
+        <div id="MeLabel"   class="badge">Me</div>
+        <!--  span does not change line  -->
+        <span id="YouScore">0</span>:<span id="MeScore">0</span>
+    </div>
+    <!-- ====================================================== -->
+
+    <!-- display the result -->
+    <div class="result">
+        <p> Ready? </p>
+    </div>
+    <!-- ====================================================== -->
+
+    <!-- show the number of choices -->
+    <div class="choices">
+        <div id="0" class="number"> <img src="images/0.png" alt=""> </div>
+        <div id="1" class="number"> <img src="images/1.png" alt=""> </div>
+        <div id="2" class="number"> <img src="images/2.png" alt=""> </div>
+    </div>
+    <!-- ====================================================== -->
+
+    <p id="action">  Choose!!! </p>
+
+
+    <div id="choises" class="history">  
+        <p id="HistoryTxt"> Previous choices: </p>
+    </div>
+
+
+    <!-- Run the script -->
+    <script src="script.js"></script>
+
+
+
+
+
+</body>
+</html>

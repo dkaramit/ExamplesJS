@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Secular+One&display=swap');
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #24272E;
+}
+
+
+/* style for h1 */
+header {
+    background-color: rgb(210, 206, 255);
+    padding: 20pt;
+}
+
+h1{
+    color: rgb(43, 49, 54);
+    text-align: center;
+    font-family: 'Handlee', cursive;
+}
+
+/* style for the score board */
+.score-box{
+    margin-top: 20pt  ;
+    margin-bottom: 20pt  ;
+    margin-left: 45%;
+
+    text-align: center;
+    border: 5pt solid white;
+    border-radius: 10pt;
+    width: 100pt;    
+
+    color: white;
+    font-size: 25pt;
+    font-family: 'Secular One', sans-serif;
+    padding: 8pt 10pt;
+
+    position: relative;
+}
+
+.badge {
+    position: 0pt;
+    border: 0pt solid blue;
+    background-color: crimson;
+    color: white;
+    width: 40pt;
+    font-size: 10pt;
+    padding: 2pt 4pt;
+}
+
+#YouLabel{
+    text-align: center;
+    position: absolute;
+    top:15pt;
+    left:-30pt;
+
+}
+
+#MeLabel{
+    text-align: center;
+    position: absolute;
+    top:15pt;
+    right:-30pt;
+}
+/* ======================================= */
+
+
+
+/* style for result */
+.result{
+    font-size: 35pt;
+    color: white;
+}
+
+/* this applies for the p inside the result class */
+.result > p{
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+}
+/* ======================================= */
+
+
+
+/* Styles for the numbers */
+/* this way you fit the image inside the size of div */
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+
+.choices{
+    text-align: center;
+}
+
+.number{
+    width: 10%;
+    margin: 5pt 5pt;
+    padding: 15pt;
+    display: inline-block;
+    border: 5pt solid blue;
+    border-radius: 50%;
+    transition:  0.4s ease;
+}
+
+.number:hover{
+    cursor: pointer;
+    background-color: teal;
+
+}
+/* ================================ */
+
+
+/* style for the action */
+#action{
+    text-align: center;
+    color: rgb(109, 243, 109);
+    font-family:  'Secular One', sans-serif;
+    font-size: 20pt;
+    margin-top: 20pt;
+
+}
+
+
+
+
+/* Styles for histoy of outcomes */
+
+.history{
+    position: absolute;
+    top:80pt;
+    right:10pt;
+
+    border: 2pt solid red;
+    border-radius: 5pt;
+    width: 250pt;
+    
+    text-align: left;
+    /* text-align: center; */
+    color: white;
+    font-size: 15pt;
+    font-family:  sans-serif;
+    padding: 0pt 0pt;
+    
+    overflow: auto;
+    height: 80%;
+}
+
+.history>p{
+    text-align: center;
+}
+#HistoryTxt{
+    margin-left:0pt;
+    
+}
+
+
+
+
+
+
+
+
+
+/* Add some extra styles so that the colors of the borders of the images change
+depending on the outcome. */
+
+.YouWin{
+    box-shadow: 0 0 20pt green;
+}
+
+
+.YouLose{
+    box-shadow: 0 0 20pt red;
+}
+
+.Draw{
+    box-shadow: 0 0 20pt white;
+}
